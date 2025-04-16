@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+
+
+.Input-Box {
+  display: flex;
+  width: 50%;
+  padding: 12px; /* Equivalent to p-3 */
+  border: 1px solid #d1d5db; /* Equivalent to border-gray-300 */
+  border-radius: 8px; /* Equivalent to rounded-lg */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Equivalent to shadow-sm */
+  outline: none;
+  background-color: #d3e5fa;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.Input-Box:focus {
+  border-color: #60a5fa; /* Equivalent to focus:ring-blue-400 */
+  box-shadow: 0 0 0 4px black; /* Equivalent to focus:ring-2 */
+  outline: none; /* Equivalent to focus:outline-none */
+}
+.button-prim {
+  margin-top: 1.1rem;
+  width: 50%;
+  padding: 12px 20px;
+  background-color: rgb(17, 126, 242); /* Tailwind's blue-800 */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-prim:hover {
+  background-color: rgb(122, 177, 236); /* Darker shade for hover effect */
+}
+
+.button-prim:active {
+  transform: scale(0.98); /* Press effect */
+}
+/* Card Styling */
+.card {
+  background-color: white;  /* White background */
+  border-radius: 12px;      /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+  border: 1px solid #ddd;  /* Light border */
+  padding: 20px;            /* Padding inside card */
+  margin-bottom: 20px;      /* Space below card */
+}
+
+/* Button on the right */
+.buttonrt {
+  background-color: transparent;
+  border: none;
+  color: #182fc4;           /* Blue color */
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+}
+
+/* Button hover effect */
+.buttonrt:hover {
+  color: #2d72c6;           /* Darker blue on hover */
+}
+
+/* Icon style inside button */
+.buttonrt .text-base {
+  font-size: 16px;
+  margin-left: 5px;         /* Space between text and icon */
+}
